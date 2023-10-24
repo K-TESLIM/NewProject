@@ -344,3 +344,50 @@
         println(i)
     }
 }*/
+
+//To call code for each number from a to b, excluding b, use a range a until b inside a for-loop.
+/*fun main() {
+    val a = 0
+    val b = 5
+    for (i in a until b) {
+        println(i)
+    }
+}*/
+
+//To call code for each number from a to b, including b, use the range a..b inside a for-loop, from high number to low number
+/*fun main() {
+    val a = 5
+    val b = 0
+    for (i in a downTo b) {
+        println(i)
+    }
+}*/
+
+//To call code for each number from a to b, skipping every "C" , use "step"
+/*fun main() {
+    val a = 0
+    val b = 10
+    val c = 2
+    for (i in a..b step c) {
+        println(i)
+    }
+}*/
+
+//To call code for each number from a to b, excluding b, with a step c, use a until b step c inside a for-loop
+/*fun main() {
+    val a = 0
+    val b = 9
+    val c = 3
+    for (i in a until b step c) {
+        println(i)
+    }
+}*/
+
+fun main() {
+    for (num in 5 downTo 1) {
+        println("$num lemonades are left")
+        println("Glupglupglup")
+    }
+    println("That is it")
+    println("Now I have to go")
+}
