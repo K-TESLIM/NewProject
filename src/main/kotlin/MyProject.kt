@@ -300,7 +300,7 @@
 }*/
 
 //Here is a code that calls its body for numbers from 0 to 2.
-fun main() {
+/*fun main() {
      var printedTimes = 0
      while (printedTimes <= 2) {
         println("Line $printedTimes");
@@ -308,4 +308,39 @@ fun main() {
          // or
          // printedTimes = printedTimes + 1
          }
-}
+}*/
+
+/*fun main() {
+     var num = 0
+     while (num < 100) {
+        println(num)
+         num += 7 // or num = num + 7
+         }
+}*/
+
+/*fun main() {
+     var i = 1
+     while (i * i <= 100) {
+        println(i * i)
+        i++
+         // or i += 1
+         // or i = i + 1
+         }
+}*/
+
+/*fun main() {
+    var i = 12
+    while (i < 100) {
+        print("$i ")
+        i = i + 13
+    }
+}*/
+
+//To call code for each number from a to b, including b, use the range a..b inside a for-loop
+/*fun main() {
+    val a = 0
+    val b = 5
+    for (i in a..b) {
+        println(i)
+    }
+}*/
