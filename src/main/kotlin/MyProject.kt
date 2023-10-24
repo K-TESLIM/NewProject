@@ -382,7 +382,7 @@
         println(i)
     }
 }*/
-
+// using for loop  to generate the text for a silly song
 fun main() {
     for (num in 5 downTo 1) {
         println("$num lemonades are left")
