@@ -155,3 +155,157 @@
              }
     }*/
 
+/*fun main() {
+    println("Is it going to rain?")
+    val probability = 70
+    val text = when {
+             probability < 40 -> "Unlikely"
+             probability <= 80 -> "Likely"
+             probability < 100 -> "Yes"
+             else -> "What?"
+            }
+    println(text)
+}*/
+
+// Using When with a value
+/*fun main() {
+    val number = 1 // or 2, 3, 4, 5, 6
+     when (number) {
+         1 -> {
+        println("Missed hit")
+         }
+         2, 3, 4, 5 -> {
+        println("Hit with value $number")
+         }
+         6 -> {
+        println("Critical hit")
+         }
+         }
+}*/
+//
+/*fun main() {
+    val number = 1 // or 2, 3, 4, 5, 6
+    val text = when (number) {
+             1 -> "Missed hit"
+             2, 3, 4, 5 -> "Hit with value $number"
+             6 -> "Critical hit"
+             else -> "Unsupported value"
+             }
+    println(text)
+}*/
+
+//Using ranges in when statements
+
+/*fun main() {
+    val number = 1 // or 2, 3, 4, 5, 6
+    val text = when (number) {
+             1 -> "Missed hit"
+             in 2..5 -> "Hit with value $number"
+             6 -> "Critical hit"
+             else -> "Unsupported value"
+             }
+    println(text)
+}*/
+
+//DataType check using "is"
+
+/*fun main() {
+    var value = "ABC"
+
+    println(value is String)
+    println(value is Int) // false
+    println(value is Boolean) // false
+    println(value is Any) // true
+
+     value = 123
+
+    println(value is String) // false
+    println(value is Int) // true
+    println(value is Boolean) // false
+    println(value is Any) // true
+}*/
+
+//DataType check using "is" in "When" statement
+
+/*fun main() {
+    val something: Any = "ABC" // or 123, 0.1, true
+     when (something) {
+         is String -> println("This is String")
+         is Int -> println("This is Int")
+         is Double -> println("This is Double")
+         is Boolean -> println("This is Boolean")
+         }
+    println(something)
+}*/
+
+/*fun main(){
+    val weekday = "Tuesday"
+    if (weekday == "Monday") {
+        println("8 AM to 12 PM")
+    } else if (weekday == "Tuesday") {
+        println("8 AM to 6 PM")
+    } else if (weekday == "Tuesday") {
+        println("8 AM to 6 PM" )
+    } else if (weekday == "wednesday") {
+        println("8 AM to 12 PM")
+    }   else if (weekday == "Thursday") {
+        println("8 AM to 6 PM")
+    }
+    else println("On $weekday, the opening hours are:")
+}*/
+
+/*fun main() {
+    val weekday = "Friday"
+    val hour = 20
+    when {
+        weekday == "Friday" -> println("8AM to 6 PM")
+        weekday == "Monday" -> println("8AM to 6 PM")
+        weekday == "Tuesday" -> println("8AM to 6 PM")
+        weekday == "wednesday" -> println("8AM to 6 PM")
+        weekday == "Thursday" -> println("8AM to 6 PM")
+    }
+    val isOpen = when (weekday) {
+        "Monday" -> hour >= 8 && hour <= 12
+        "Tuesday", "Wednesday", "Thursday" -> hour >= 8 && hour <= 18
+        "Friday" -> hour >= 8 && hour <= 21
+        "Saturday" -> hour >= 9 && hour <= 16
+        "Sunday" -> hour >= 8 && hour <= 16
+        else -> false
+    }
+    if (isOpen) {
+        println("Little Lemon is open now")
+    } else {
+        println("Little Lemon is closed now")
+    }
+}*/
+
+/*fun main(){
+    val a = 21
+    if (a < 20)
+        if(a > 10)
+            print("Hi $a")
+        else if(a < 10)
+            print ("Bonjour $a")
+        else
+            print ("Welcome $a")
+}*/
+
+/*fun main() {
+    var tobeprinted = true
+     while (tobeprinted) {
+        println("Prints forever!")
+         tobeprinted = false
+
+         }
+}*/
+
+//Here is a code that calls its body for numbers from 0 to 2.
+fun main() {
+     var printedTimes = 0
+     while (printedTimes <= 2) {
+        println("Line $printedTimes");
+        printedTimes += 1
+         // or
+         // printedTimes = printedTimes + 1
+         }
+}
