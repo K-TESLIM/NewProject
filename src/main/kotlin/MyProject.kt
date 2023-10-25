@@ -460,3 +460,39 @@ fun main() {
 fun main() {
     getLocation()
 }*/
+
+// Lesson on local variables: these variables can only be used at the function in which they are defined.
+/*fun f1() {
+    val a = "Text 1"
+    println(a)
+    // can use a here
+    // here, I cannot use b
+}
+
+fun f2() {
+    val b = "Text 2"
+    println(b)
+    // can use b here
+    // here, I cannot use a
+}
+
+fun main() {
+    f2()
+    // here, I cannot neither use a or b
+}*/
+
+    var name = "Jessica"
+
+    fun setName() {
+        name = "Mike"
+        println("mike")
+    }
+
+    fun printName() {
+        println(name)
+    }
+
+fun main() {
+    setName()
+    printName()
+}
