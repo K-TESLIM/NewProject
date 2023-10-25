@@ -596,3 +596,26 @@ fun main() {
     println(biggerOf(3, 1)) // 3
     println(biggerOf(10, 20)) // 20
 }*/
+
+// Anything after "return" will not be executed
+/*fun triangleArea(width: Double, height: Double): Double {
+    return width * height / 2
+    println("Will never be called")
+}
+
+fun main() {
+    println(triangleArea(10.0, 20.0)) // 100.0
+}*/
+
+//no need for else block
+fun biggerOf(a: Int, b: Int): Int {
+    if (a > b) {
+        return a
+    }
+    return b
+}
+
+fun main() {
+    println(biggerOf(3, 1)) // 3
+    println(biggerOf(10, 20)) // 20
+}
