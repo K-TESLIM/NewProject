@@ -571,3 +571,15 @@ fun main() {
     isoscelesTriangle(5)
 }*/
 
+//functions with return value
+fun triangleArea(width: Double, height: Double): Double {
+    return width * height / 2
+}
+
+fun main() {
+    val area: Double = triangleArea(1.0, 2.0)
+    println(area) // 1.0
+    println(triangleArea(2.0, 2.0)) // 2.0
+    println(triangleArea(5.0, 5.0)) // 12.5
+    println(triangleArea(10.0, 20.0)) // 100.0
+}
