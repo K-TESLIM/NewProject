@@ -584,7 +584,7 @@ fun main() {
 }*/
 
 //Function to find the bigger of two parameters using if-else statement
-fun biggerOf(a: Int, b: Int): Int {
+/*fun biggerOf(a: Int, b: Int): Int {
     if (a > b) {
         return a
     } else {
@@ -595,4 +595,4 @@ fun biggerOf(a: Int, b: Int): Int {
 fun main() {
     println(biggerOf(3, 1)) // 3
     println(biggerOf(10, 20)) // 20
-}
+}*/
