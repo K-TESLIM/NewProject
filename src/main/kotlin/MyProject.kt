@@ -383,7 +383,7 @@
     }
 }*/
 // using for loop  to generate the text for a silly song
-fun main() {
+/*fun main() {
     for (num in 5 downTo 1) {
         println("$num lemonades are left")
         println("Glupglupglup")
@@ -391,4 +391,72 @@ fun main() {
     println("That is it")
     println("Now I have to go")
     println("Bye for now")
+}*/
+
+//using Nested-for loop to print triangle of stars
+/*fun main() {
+    for (i in 1..5) {
+        for (j in 1..i) {
+            print("*")
+        }
+        println()
+    }
+}*/
+
+//triangle that starts with five stars and ends with one using a nested loop.
+/*fun main() {
+    for (i in 1..5) {
+        val numberOfStars = 6 - i
+        for (j in 1..numberOfStars) {
+            print("*")
+        }
+        println()
+    }
 }
+
+OR
+
+fun main() {
+    for (numberOfStars in 5 downTo 1) {
+        for (i in 1..numberOfStars) {
+            print("*")
+        }
+        println()
+    }
+}*/
+
+//inverted triangle with spaces using nested for loop
+/*fun main() {
+    for (i in 1..5) {
+        val numberOfSpaces = 5 - i
+        for (j in 1..numberOfSpaces) {
+            print(" ")
+        }
+        val numberOfStars = i
+        for (j in 1..numberOfStars) {
+            print("*")
+        }
+        println()
+    }
+}*/
+
+/*fun main() {
+    for (i in 1..5) {
+        val numberOfSpaces = 5 - i
+        for (j in 1..numberOfSpaces) {
+            print(" ")
+        }
+        val numberOfStars = i * 2 - 1
+        for (j in 1..numberOfStars) {
+            print("*")
+        }
+        println()
+    }
+}*/
+
+//calling a function within a function
+/*fun getLocation() { println("Printing from getLocation() function.") }
+
+fun main() {
+    getLocation()
+}*/
