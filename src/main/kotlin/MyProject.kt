@@ -481,7 +481,8 @@ fun main() {
     // here, I cannot neither use a or b
 }*/
 
-    var name = "Jessica"
+//Local Variable in a function
+/*var name = "Jessica"
 
     fun setName() {
         name = "Mike"
@@ -495,4 +496,78 @@ fun main() {
 fun main() {
     setName()
     printName()
+}*/
+
+//Local functions
+/*
+fun b() {
+     // here I cannot use function a
 }
+
+fun main() {
+     // here I cannot use function a
+     fun a() {
+        println("A")
+         }
+    a() // Here I can use function a
+    b()
+    c()
+    a() // Here I can use function a
+}
+
+fun c() {
+     // here I cannot use function a
+}*/
+
+/*fun printStars(num: Int) {
+    for (j in 1..num) {
+        print("*")
+    }
+    println()
+}
+
+fun main() {
+    printStars(5)
+}*/
+
+fun printStars(num: Int) {
+    for (j in 1..num) {
+        print("*")
+    }
+    println()
+}
+
+/*fun ascendingTriangle(height: Int) {
+    for (i in 1..height) {
+        printStars(i)
+    }
+}
+
+fun main() {
+    ascendingTriangle(5)
+}*/
+// functions with parameters
+/*fun descendingTriangle(height: Int) {
+    for (stars in height downTo 1) {
+        printStars(stars)
+    }
+}
+fun ascendingTriangle(height: Int) {
+    for (i in 1..height) {
+        printStars(i)
+    }
+}
+fun isoscelesTriangle(width: Int) {
+   descendingTriangle(width)
+}
+
+
+fun main() {
+    println("Ascending triangle:")
+    ascendingTriangle(5)
+    println("Descending triangle:")
+    descendingTriangle(5)
+    println("Isosceles triangle:")
+    isoscelesTriangle(5)
+}*/
+
