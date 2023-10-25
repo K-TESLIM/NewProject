@@ -570,9 +570,8 @@ fun main() {
     println("Isosceles triangle:")
     isoscelesTriangle(5)
 }*/
-
 //functions with return value
-fun triangleArea(width: Double, height: Double): Double {
+/*fun triangleArea(width: Double, height: Double): Double {
     return width * height / 2
 }
 
@@ -582,4 +581,18 @@ fun main() {
     println(triangleArea(2.0, 2.0)) // 2.0
     println(triangleArea(5.0, 5.0)) // 12.5
     println(triangleArea(10.0, 20.0)) // 100.0
+}*/
+
+//Function to find the bigger of two parameters using if-else statement
+fun biggerOf(a: Int, b: Int): Int {
+    if (a > b) {
+        return a
+    } else {
+        return b
+    }
+}
+
+fun main() {
+    println(biggerOf(3, 1)) // 3
+    println(biggerOf(10, 20)) // 20
 }
