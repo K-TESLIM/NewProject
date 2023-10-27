@@ -699,7 +699,7 @@ fun main() {
 
 
 //Named arguments: You do that by introducing parameter names and the equal sign in front of a parameter.
-fun cheer(how: String = "Hello, ", who: String = "World") {
+/*fun cheer(how: String = "Hello, ", who: String = "World") {
 
     print("$how $who")
 }
@@ -713,4 +713,26 @@ fun main() {
     cheer(how = "Hi ", who = "Learner") // Hi Learner
 
     cheer(who = "Learner", how = "Hi ") // Hi Learner
+}*/
+
+/*fun printSurrounded(value: String = "", prefix: String = "<", postfix: String = ">") {
+
+    println("$prefix$value$postfix")
 }
+
+fun main() {
+
+    printSurrounded("ABC")
+}*/
+
+//Practice
+fun printSurrounded(value: String = "", prefix: String = "<", postfix: String = ">") {
+    println("$prefix$value$postfix")
+}
+
+
+fun main() {
+    printSurrounded("ABC", ".")
+    printSurrounded(postfix = ".")
+}
+
