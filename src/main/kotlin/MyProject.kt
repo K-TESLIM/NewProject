@@ -638,7 +638,7 @@ fun triangleArea(width: Double, height: Double): Double = width * height / 2
 fun biggerOf(a: Int, b: Int): Int = if (a > b) a else b*/
 
 //Recursion: function to determine factorial
-fun factorial(number: Int): Int {
+/*fun factorial(number: Int): Int {
 
     var accumulator = 1
 
@@ -658,4 +658,41 @@ fun main() {
     println(factorial(4)) // 24
     println(factorial(5)) // 120
     println(factorial(6)) // 720
+}
+
+OR
+
+fun factorial(number: Int): Int {
+
+    if (number <= 1) {
+        return 1
+    }
+    return factorial(number - 1) * number
+}
+
+fun main() {
+    println(factorial(1)) // 1
+    println(factorial(2)) // 2
+    println(factorial(3)) // 6
+    println(factorial(4)) // 24
+    println(factorial(5)) // 120
+    println(factorial(6)) // 720
+}*/
+
+//passing default argument in a function
+fun openBrowser(url: String, incognitoMode: Boolean = false) {
+
+    println("Opening $url" + if (incognitoMode) " in incognito mode" else "")
+
+    // ...
+
+}
+
+fun main() {
+
+    openBrowser("website1.com") // Opening website1.com
+
+    openBrowser("website2.com") // Opening website2.com
+
+    openBrowser("website3.com", true) // Opening website3.com in incognito mode
 }
