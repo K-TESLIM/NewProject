@@ -680,7 +680,7 @@ fun main() {
 }*/
 
 //passing default argument in a function
-fun openBrowser(url: String, incognitoMode: Boolean = false) {
+/*fun openBrowser(url: String, incognitoMode: Boolean = false) {
 
     println("Opening $url" + if (incognitoMode) " in incognito mode" else "")
 
@@ -695,4 +695,22 @@ fun main() {
     openBrowser("website2.com") // Opening website2.com
 
     openBrowser("website3.com", true) // Opening website3.com in incognito mode
+}*/
+
+
+//Named arguments: You do that by introducing parameter names and the equal sign in front of a parameter.
+fun cheer(how: String = "Hello, ", who: String = "World") {
+
+    print("$how $who")
+}
+
+fun main() {
+
+    cheer(how = "Hi ") // Hi World
+
+    cheer(who = "Learner") // Hello, Learner
+
+    cheer(how = "Hi ", who = "Learner") // Hi Learner
+
+    cheer(who = "Learner", how = "Hi ") // Hi Learner
 }
