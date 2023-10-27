@@ -608,7 +608,7 @@ fun main() {
 }*/
 
 //no need for else block
-fun biggerOf(a: Int, b: Int): Int {
+/*fun biggerOf(a: Int, b: Int): Int {
     if (a > b) {
         return a
     }
@@ -618,4 +618,44 @@ fun biggerOf(a: Int, b: Int): Int {
 fun main() {
     println(biggerOf(3, 1)) // 3
     println(biggerOf(10, 20)) // 20
+}*/
+
+//Instead of curly braces you can use "="
+/*fun triangleArea(width: Double, height: Double): Double {
+    return width * height / 2
+}
+
+//OR
+
+fun biggerOf(a: Int, b: Int): Int {
+    return if (a > b) a else b
+}
+
+//OR
+
+fun triangleArea(width: Double, height: Double): Double = width * height / 2
+
+fun biggerOf(a: Int, b: Int): Int = if (a > b) a else b*/
+
+//Recursion: function to determine factorial
+fun factorial(number: Int): Int {
+
+    var accumulator = 1
+
+    for (i in 1..number) {
+
+        accumulator = accumulator * i
+    }
+
+    return accumulator
+}
+
+fun main() {
+
+    println(factorial(1)) // 1
+    println(factorial(2)) // 2
+    println(factorial(3)) // 6
+    println(factorial(4)) // 24
+    println(factorial(5)) // 120
+    println(factorial(6)) // 720
 }
