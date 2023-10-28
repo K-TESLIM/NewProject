@@ -761,6 +761,8 @@ fun main() {
     println(biology1.teacher.status) // ACTIVE
 }*/
 
+
+//Using Methods to call Methods of the same class
 class Barista(
     val name: String,
     val address: Int
