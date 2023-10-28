@@ -738,7 +738,7 @@ fun main() {
 
 
 //using Classes
-class Subject(
+/*class Subject(
     val name: String,
     val teacher: Teacher,
     val isObligatory: Boolean,
@@ -759,5 +759,30 @@ fun main() {
     println(biology1.isObligatory) // true
     println(biology1.teacher.birthday) // 23.07.1987
     println(biology1.teacher.status) // ACTIVE
+}*/
+
+class Barista(
+    val name: String,
+    val address: Int
+) {
+    fun makeCofee(type: String, size: Int): Cofee {
+        println("$name makes Cofee of size $size and type $type")
+        return Cofee(type, size)
+    }
+
+    fun cheerAndMakeCofee(type: String, size: Int) {
+        println("Hello")
+        makeCofee(type, size)
+    }
 }
 
+class Cofee(
+   val type: String,
+    val size: Int
+    )
+
+fun main() {
+    val barista = Barista("Jake", 4)
+   // val Cofee = barista.makeCofee("small", 2)
+    barista.cheerAndMakeCofee("small", 2)
+}
