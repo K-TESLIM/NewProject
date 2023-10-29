@@ -1006,7 +1006,7 @@ fun main() {
 }*/
 
 //using enum classes
-enum class Letter {
+/*enum class Letter {
     A,
     B,
     C,
@@ -1016,4 +1016,15 @@ fun main() {
     for (l in Letter.values()) {
         print(l)
     }
+}*/
+
+//using enum classes
+enum class Letter(val smallLetter: Char) {
+    A('a'),
+    B('b'),
+    C('c'),
+}
+
+fun main() {
+    println(Letter.A.smallLetter)
 }
