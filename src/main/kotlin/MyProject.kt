@@ -887,7 +887,7 @@ fun main() {
 //OR
 
 //Data modifier before a class can be used to  get more meaningful data from printing a string
-data class Dog(
+/*data class Dog(
     val name: String
 )
 
@@ -896,7 +896,22 @@ fun main() {
     val pluto2 = Dog("Pluto")
     val rex = Dog("rex")
 
-    println(pluto1 == pluto2) // false
+    println(pluto1 == pluto2) // true
     println(pluto1 == pluto1) // true
-    println(pluto1)// Dog@312b1dae
+    println(pluto1)// Dog(name=Pluto)
+    println(rex) // Dog(name=rex)
+    println("Dog: $pluto1") // Dog: Dog(name=Pluto)
+}*/
+
+// using data classes
+data class Dog(
+    val name: String,
+    val age: Int
+)
+
+fun main() {
+    val dog = Dog("Pluto", 7)
+    val (age, name) = dog
+    println(age) // Pluto
+    println(name) // 7
 }
