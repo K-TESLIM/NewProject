@@ -959,7 +959,7 @@ fun main() {
 
 
 //using "triple" class
-fun main() {
+/*fun main() {
     val pair = Triple(1F, "ABC", true)
     println(pair.first) // 1.0
     println(pair.second) // ABC
@@ -971,4 +971,23 @@ fun main() {
     println(number) // 1.0
     println(letters) // ABC
     println(boolean) // true
+}
+*/
+
+/*data class Value(val value: Int)
+
+fun main() {
+    val (value) = Value(42)
+    println(value)
+}*/
+// using copy method to specify modifications to be made to an object in a class
+data class FullName(
+    val name: String,
+    val surname: String
+)
+
+fun main() {
+    val name = FullName("Marie", "Sklodowska")
+    val newName = name.copy(surname = "Sklodowska-Curie")
+    println(newName)
 }
