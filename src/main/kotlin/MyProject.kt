@@ -917,7 +917,7 @@ fun main() {
 }*/
 
 // using copy method to specify modifications to be made to an object in a class
-data class Dog(
+/*data class Dog(
     val name: String,
     val age: Int
 )
@@ -930,4 +930,16 @@ fun main() {
     println(dog.copy()) // Dog(name=Pluto, age=7)
     println(dog.copy(age = 8)) // Dog(name=Pluto, age=8)
     println(dog.copy(name = "Neptune")) // Dog(name=Neptune, age=7)
+}*/
+
+//using pair class
+fun main() {
+    val pair = Pair(1.0, 'A')
+    println(pair.first) // 1.0
+    println(pair.second) // A
+    val (number, letter) = pair
+     // the type of number is Double
+     // the type of letter is Char
+    println(number) // 1.0
+    println(letter) // A
 }
