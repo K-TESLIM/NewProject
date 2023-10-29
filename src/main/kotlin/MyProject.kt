@@ -1019,7 +1019,7 @@ fun main() {
 }*/
 
 //using enum classes
-enum class Letter(val smallLetter: Char) {
+/*enum class Letter(val smallLetter: Char) {
     A('a'),
     B('b'),
     C('c'),
@@ -1027,4 +1027,22 @@ enum class Letter(val smallLetter: Char) {
 
 fun main() {
     println(Letter.A.smallLetter)
+}*/
+
+
+//Exception classes: using try-catch block to catch errors
+class MyError: Throwable("Some message")
+
+fun someFunction() {
+     throw MyError()
+    println("Will not be printed")
+}
+
+fun main() {
+     try {
+        someFunction()
+        println("Will not be printed")
+         } catch (e: Throwable) {
+        println("Caught $e") // Caught MyError: Some message
+         }
 }
