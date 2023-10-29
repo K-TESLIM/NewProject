@@ -980,8 +980,9 @@ fun main() {
     val (value) = Value(42)
     println(value)
 }*/
+
 // using copy method to specify modifications to be made to an object in a class
-data class FullName(
+/*data class FullName(
     val name: String,
     val surname: String
 )
@@ -990,4 +991,15 @@ fun main() {
     val name = FullName("Marie", "Sklodowska")
     val newName = name.copy(surname = "Sklodowska-Curie")
     println(newName)
+}*/
+
+// using enum classes
+enum class Letter {
+    A,
+    B,
+    C,
+}
+
+fun main() {
+    println(Letter.C)
 }
