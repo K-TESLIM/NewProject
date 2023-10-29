@@ -904,7 +904,7 @@ fun main() {
 }*/
 
 // using data classes
-data class Dog(
+/*data class Dog(
      val name: String,
     val age: Int
 )
@@ -914,4 +914,20 @@ fun main() {
     val (age, name) = dog
     println(age) // Pluto
     println(name) // 7
+}*/
+
+// using copy method to specify modifications to be made to an object in a class
+data class Dog(
+    val name: String,
+    val age: Int
+)
+
+fun main() {
+    val dog = Dog("Pluto", 7)
+    val (age, name) = dog
+    println(age) // Pluto
+    println(name) // 7
+    println(dog.copy()) // Dog(name=Pluto, age=7)
+    println(dog.copy(age = 8)) // Dog(name=Pluto, age=8)
+    println(dog.copy(name = "Neptune")) // Dog(name=Neptune, age=7)
 }
