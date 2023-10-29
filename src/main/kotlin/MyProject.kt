@@ -1031,7 +1031,7 @@ fun main() {
 
 
 //Exception classes: using try-catch block to catch errors
-class MyError: Throwable("Some message")
+/*class MyError: Throwable("Some message")
 
 fun someFunction() {
      throw MyError()
@@ -1045,4 +1045,20 @@ fun main() {
          } catch (e: Throwable) {
         println("Caught $e") // Caught MyError: Some message
          }
+}*/
+
+//Using "Finally" block: It is used to specify a block of code that should always be invoked, even if an exception occurs.
+fun someFunction() {
+     throw Throwable("Some error")
+    println("Will not be printed")
+}
+
+fun main() {
+     try {
+        someFunction()
+        println("Will not be printed")
+         } finally {
+        println("Finally block was called") // Finally block was called
+         }
+    println("Will not be printed")
 }
