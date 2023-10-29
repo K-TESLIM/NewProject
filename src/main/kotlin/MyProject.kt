@@ -946,7 +946,7 @@ fun main() {
 
 //Or
 
-fun main() {
+/*fun main() {
     val pair = 1.0 to 'A'
     println(pair.first) // 1.0
     println(pair.second) // A
@@ -955,4 +955,20 @@ fun main() {
      // the type of letter is Char
     println(number) // 1.0
     println(letter) // A
+}*/
+
+
+//using "triple" class
+fun main() {
+    val pair = Triple(1F, "ABC", true)
+    println(pair.first) // 1.0
+    println(pair.second) // ABC
+    println(pair.third) // true
+    val (number, letters, boolean) = pair
+     // the type of number is Double
+     // the type of letters is Char
+     // the type of boolean is Boolean
+    println(number) // 1.0
+    println(letters) // ABC
+    println(boolean) // true
 }
