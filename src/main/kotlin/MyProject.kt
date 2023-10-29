@@ -763,7 +763,7 @@ fun main() {
 
 
 //Using Methods to call Methods of the same class
-class Barista(
+/*class Barista(
     val name: String,
     val address: Int
 ) {
@@ -787,4 +787,33 @@ fun main() {
     val barista = Barista("Jake", 4)
    // val Cofee = barista.makeCofee("small", 2)
     barista.cheerAndMakeCofee("small", 2)
+}*/
+//using Abstract Classes
+abstract class ShapeDrawer {
+    fun drawSquare(){
+        drawLine()
+    }
+    fun drawRectangle(){
+        drawLine()
+    }
+    internal abstract fun drawLine()
+}
+class AndroidShapeDrawer():ShapeDrawer(){
+
+    override fun drawLine() {
+        //code that draw lines for android platform
+        println("Test code -Draw line for  android platform")
+    }
+}
+class DesktopShapeDrawer():ShapeDrawer(){
+    override fun drawLine() {
+        //code that draw lines for android platform
+        println("Test code -Draw line for  desktop platform")
+    }
+}
+fun main(){
+    val androidDrawer:ShapeDrawer = AndroidShapeDrawer()
+    androidDrawer.drawSquare()
+    val desktopDrawer:ShapeDrawer = DesktopShapeDrawer()
+    desktopDrawer.drawSquare()
 }
