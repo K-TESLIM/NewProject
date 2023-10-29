@@ -905,7 +905,7 @@ fun main() {
 
 // using data classes
 data class Dog(
-    val name: String,
+     val name: String,
     val age: Int
 )
 
