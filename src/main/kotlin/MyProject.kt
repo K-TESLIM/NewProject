@@ -933,8 +933,21 @@ fun main() {
 }*/
 
 //using pair class
-fun main() {
+/*fun main() {
     val pair = Pair(1.0, 'A')
+    println(pair.first) // 1.0
+    println(pair.second) // A
+    val (number, letter) = pair
+     // the type of number is Double
+     // the type of letter is Char
+    println(number) // 1.0
+    println(letter) // A
+}*/
+
+//Or
+
+fun main() {
+    val pair = 1.0 to 'A'
     println(pair.first) // 1.0
     println(pair.second) // A
     val (number, letter) = pair
