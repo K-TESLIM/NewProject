@@ -788,8 +788,10 @@ fun main() {
    // val Cofee = barista.makeCofee("small", 2)
     barista.cheerAndMakeCofee("small", 2)
 }*/
+
+
 //using Abstract Classes
-abstract class ShapeDrawer {
+/*abstract class ShapeDrawer {
     fun drawSquare(){
         drawLine()
     }
@@ -816,4 +818,67 @@ fun main(){
     androidDrawer.drawSquare()
     val desktopDrawer:ShapeDrawer = DesktopShapeDrawer()
     desktopDrawer.drawSquare()
+}*/
+/*
+abstract class A {
+    abstract fun a()
+}
+class B: A() {
+    override fun a() {println("Hello")}
+}
+fun main() {
+    val b = B()
+    b.a()
+} */
+
+
+/*
+fun a() {
+    print("A")
+}
+
+fun b() {
+    print("B")
+    a()
+}
+
+fun c() {
+    b()
+    print("C")
+    b()
+}
+
+fun main() {
+    c()
+}*/
+/*
+fun a() {
+    print("A")
+}
+
+fun b() {
+    print("B")
+    a()
+}
+
+fun c() {
+    b()
+    print("C")
+    b()
+}
+
+fun main() {
+    c()
+}*/
+//All objects created with custom classes are considered unique, they are not equal to any other object.
+class Dog(
+    val name: String
+)
+
+fun main() {
+    val pluto1 = Dog("Pluto")
+    val pluto2 = Dog("Pluto")
+
+    println(pluto1 == pluto2) // false
+    println(pluto1 == pluto1) // true
 }
