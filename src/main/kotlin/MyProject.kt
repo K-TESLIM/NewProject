@@ -994,6 +994,7 @@ fun main() {
 }*/
 
 // using enum classes
+/*
 enum class Letter {
     A,
     B,
@@ -1002,4 +1003,17 @@ enum class Letter {
 
 fun main() {
     println(Letter.C)
+}*/
+
+//using enum classes
+enum class Letter {
+    A,
+    B,
+    C,
+}
+
+fun main() {
+    for (l in Letter.values()) {
+        print(l)
+    }
 }
