@@ -871,7 +871,7 @@ fun main() {
     c()
 }*/
 //All objects created with custom classes are considered unique, they are not equal to any other object.
-class Dog(
+/*class Dog(
     val name: String
 )
 
@@ -881,4 +881,22 @@ fun main() {
 
     println(pluto1 == pluto2) // false
     println(pluto1 == pluto1) // true
+    println(pluto1)// Dog@312b1dae
+}*/
+
+//OR
+
+//Data modifier before a class can be used to  get more meaningful data from printing a string
+data class Dog(
+    val name: String
+)
+
+fun main() {
+    val pluto1 = Dog("Pluto")
+    val pluto2 = Dog("Pluto")
+    val rex = Dog("rex")
+
+    println(pluto1 == pluto2) // false
+    println(pluto1 == pluto1) // true
+    println(pluto1)// Dog@312b1dae
 }
