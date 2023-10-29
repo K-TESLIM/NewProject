@@ -1048,7 +1048,7 @@ fun main() {
 }*/
 
 //Using "Finally" block: It is used to specify a block of code that should always be invoked, even if an exception occurs.
-fun someFunction() {
+/*fun someFunction() {
      throw Throwable("Some error")
     println("Will not be printed")
 }
@@ -1061,4 +1061,19 @@ fun main() {
         println("Finally block was called") // Finally block was called
          }
     println("Will not be printed")
+}*/
+
+//The "finally" block is also invoked when the try block finishes without an exception.
+fun someFunction() {
+    println("Will be printed") // Will be printed
+}
+
+fun main() {
+     try {
+        someFunction()
+        println("Will be printed") // Will be printed
+         } finally {
+        println("Finally block was called") // Finally block was called
+         }
+    println("Will be printed") // Will be printed
 }
