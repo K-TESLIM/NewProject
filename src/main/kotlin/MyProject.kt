@@ -1276,7 +1276,18 @@ fun main() {
 }*/
 
 //getting the number of elements in a list using "Size" property
-fun main() {
+/*fun main() {
     val list = listOf("A", "B", "C")
     println(list.size) // 3
+}*/
+
+//To check if a list is empty, you can compare its size to 0, or you can use the isEmpty method.
+fun main() {
+    val list = listOf("A", "B", "C")
+    println(list.size == 0) // False
+    println(list.isEmpty()) // False
+
+    val empty: Set<Int> = setOf()
+    println(empty.size == 0) // True
+    println(empty.isEmpty()) // True
 }
