@@ -1064,7 +1064,7 @@ fun main() {
 }*/
 
 //The "finally" block is also invoked when the try block finishes without an exception.
-fun someFunction() {
+/*fun someFunction() {
     println("Will be printed") // Will be printed
 }
 
@@ -1076,4 +1076,58 @@ fun main() {
         println("Finally block was called") // Finally block was called
          }
     println("Will be printed") // Will be printed
+}*/
+
+/*fun constructLabel(role: String, name: String): String {
+     return when (role) {
+         "ceo" -> "The boss"
+         "manager" -> "Manager $name"
+         "worker" -> name
+         else -> "Unknown role"
+         }
 }
+
+fun main() {
+    val label = constructLabel("manager", "Leonard")
+    println(label) // Manager Leonard
+}*/
+
+/*enum class Role {
+     CEO,
+     MANAGER,
+     WORKER
+}
+
+fun constructLabel(role: Role, name: String): String {
+     return when (role) {
+         CEO -> "The boss"
+         MANAGER -> "Manager $name"
+         WORKER -> name
+
+     }
+}
+
+fun main() {
+    val label = constructLabel(Role.MANAGER, "Leonard")
+    println(label) // Manager Leonard
+}
+*/
+
+//using Sealed Classes
+/*sealed class Role
+class CeoRole(): Role()
+class ManagerRole(val name: String): Role()
+class WorkerRole(val name: String): Role()
+
+fun constructLabel(role: Role): String {
+     return when (role) {
+         is CeoRole -> "The boss"
+         is ManagerRole -> "Manager ${role.name}"
+         is WorkerRole -> role.name
+         }
+}
+
+fun main() {
+    val label = constructLabel(ManagerRole("Leonard"))
+    println(label) // Manager Leonard
+}*/
