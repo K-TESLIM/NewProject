@@ -1268,9 +1268,15 @@ fun main() {
 }*/
 
 //Adding elements to List
-fun main() {
+/*fun main() {
     val list = listOf("A", "B")
     println(list + "C") // [A, B, C]
     println(list + listOf("C", "D")) // [A, B, C, D]
     println(listOf("Z") + list) // [Z, A, B]
+}*/
+
+//getting the number of elements in a list using "Size" property
+fun main() {
+    val list = listOf("A", "B", "C")
+    println(list.size) // 3
 }
