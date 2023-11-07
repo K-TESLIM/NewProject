@@ -1156,3 +1156,9 @@ val a: Int
      fun b() {}
 }*/
 
+
+//Printing null value
+fun main(){
+    var message: String? = "Hello World"
+    println(message = null) // this is ok
+}
