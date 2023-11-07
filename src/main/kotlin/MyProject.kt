@@ -1253,7 +1253,15 @@ fun searchInStudents(name:String):Student?{
 }*/
 
 //Collection Type: Creating a list
-fun main() {
+/*fun main() {
     val list = listOf("A", "B", "C")
     println(list) // [A, B, C]
+}*/
+
+//Specifying List data Type
+fun main() {
+    val list: List<String> = listOf("A", "B", "C")
+    println(list) // [A, B, C]
+    val ints: List<Int> = listOf(1, 2, 3)
+    println(ints) // [1, 2, 3]
 }
