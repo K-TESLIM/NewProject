@@ -1182,7 +1182,7 @@ val a: Int
 }*/
 
 // Using Smart Casting
-fun consume(a: Any) {
+/*fun consume(a: Any) {
      if (a is String) {
         println(a.length) // the type of a is String
          }
@@ -1194,4 +1194,18 @@ fun consume(a: Any) {
 fun main() {
      consume("ABC") // 3
     consume(10) // 100
+}*/
+
+//Using Smart Casting
+fun consume(a: String?) {
+     if (a != null) {
+        println(a.length) // the type of a is String
+         } else {
+        println("Cannot handle null")
+         }
+}
+
+fun main() {
+     consume("ABC") // 3
+     consume(null) // Cannot handle null
 }
