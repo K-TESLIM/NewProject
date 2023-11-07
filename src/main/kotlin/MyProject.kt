@@ -1197,7 +1197,7 @@ fun main() {
 }*/
 
 //Using Smart Casting
-fun consume(a: String?) {
+/*fun consume(a: String?) {
      if (a != null) {
         println(a.length) // the type of a is String
          } else {
@@ -1208,4 +1208,16 @@ fun consume(a: String?) {
 fun main() {
      consume("ABC") // 3
      consume(null) // Cannot handle null
+}*/
+
+//Another variation of smart-Casting
+fun consume(a: String?) {
+     if (a == null || a.length == 0) return // after || a is smart-casted to String
+    println(a.length) // the type of a is String
+}
+
+fun main() {
+     consume("ABC") // 3
+     consume(null)
+    consume("")
 }
