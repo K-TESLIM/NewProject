@@ -1211,7 +1211,7 @@ fun main() {
 }*/
 
 //Another variation of smart-Casting
-fun consume(a: String?) {
+/*fun consume(a: String?) {
      if (a == null || a.length == 0) return // after || a is smart-casted to String
     println(a.length) // the type of a is String
 }
@@ -1220,4 +1220,40 @@ fun main() {
      consume("ABC") // 3
      consume(null)
     consume("")
+}*/
+
+/*
+//step 1
+data class Student(val fullName: String, var id: Int,var grade:Double)
+
+val students = listOf<Student>(
+    Student("John", 223,140.0),
+    Student("Mark", 548,120.0),
+    Student("Natali", 342,150.0),
+    Student("Sara", 781,130.0)
+)
+
+
+fun main() {
+//    step 4
+    println("Please, Enter the student's ID")
+    val id = readln().toInt()
+    println( getStudentById(id))
+    println("Please, Enter the student's name")
+    val name= readln()
+    println(searchInStudents(name)?:"the student is not found")
+}
+//step 2
+fun getStudentById(id:Int):Student{
+    return  students.find { it.id==id }!!
+}
+//step 3
+fun searchInStudents(name:String):Student?{
+    return students.find { it.fullName.lowercase()==name.lowercase()}
+}*/
+
+//Collection Type: Creating a list
+fun main() {
+    val list = listOf("A", "B", "C")
+    println(list) // [A, B, C]
 }
