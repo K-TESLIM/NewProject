@@ -1158,7 +1158,7 @@ val a: Int
 
 
 //Printing null value
-fun main(){
+/*fun main(){
     var message: String? = "Hello World"
     println(message = null) // this is ok
     if (message != null) {
@@ -1171,4 +1171,12 @@ fun main(){
 
         print(null)
     }
+}*/
+
+//Using safe calls
+fun main(){
+    var message: String? = "Hello World"
+    print(message?.length) //Will print 11
+    message = null //Assign null to the variable
+    print(message?.length) //Will print null
 }
