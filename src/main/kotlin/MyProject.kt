@@ -1114,7 +1114,7 @@ fun main() {
 */
 
 //using Sealed Classes
-/*sealed class Role
+sealed class Role
 class CeoRole(): Role()
 class ManagerRole(val name: String): Role()
 class WorkerRole(val name: String): Role()
@@ -1130,4 +1130,5 @@ fun constructLabel(role: Role): String {
 fun main() {
     val label = constructLabel(ManagerRole("Leonard"))
     println(label) // Manager Leonard
-}*/
+}
+
