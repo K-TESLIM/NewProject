@@ -1114,7 +1114,7 @@ fun main() {
 */
 
 //using Sealed Classes
-sealed class Role
+/*sealed class Role
 class CeoRole(): Role()
 class ManagerRole(val name: String): Role()
 class WorkerRole(val name: String): Role()
@@ -1130,5 +1130,17 @@ fun constructLabel(role: Role): String {
 fun main() {
     val label = constructLabel(ManagerRole("Leonard"))
     println(label) // Manager Leonard
+}*/
+
+//Annotation classes
+@Throws(ArithmeticException::class)
+fun divide(a: Int, b: Int): Int {
+     return a / b
+}
+
+@Throws(IllegalArgumentException::class)
+fun findClusters(number: Int) {
+     if (number < 1) throw IllegalArgumentException("The number of clusters cannot be smaller than 1, it is $number")
+     // ...
 }
 
