@@ -1161,4 +1161,14 @@ val a: Int
 fun main(){
     var message: String? = "Hello World"
     println(message = null) // this is ok
+    if (message != null) {
+
+        var length =
+            message.length // Will not cause an error because you have checked that the value is not null
+
+        print(length)
+    } else {
+
+        print(null)
+    }
 }
