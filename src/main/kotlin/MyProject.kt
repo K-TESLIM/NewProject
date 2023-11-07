@@ -1259,9 +1259,18 @@ fun searchInStudents(name:String):Student?{
 }*/
 
 //Specifying List data Type
+/*
 fun main() {
     val list: List<String> = listOf("A", "B", "C")
     println(list) // [A, B, C]
     val ints: List<Int> = listOf(1, 2, 3)
     println(ints) // [1, 2, 3]
+}*/
+
+//Adding elements to List
+fun main() {
+    val list = listOf("A", "B")
+    println(list + "C") // [A, B, C]
+    println(list + listOf("C", "D")) // [A, B, C, D]
+    println(listOf("Z") + list) // [Z, A, B]
 }
