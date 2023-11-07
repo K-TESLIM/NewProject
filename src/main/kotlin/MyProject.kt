@@ -1174,9 +1174,24 @@ val a: Int
 }*/
 
 //Using safe calls
-fun main(){
+/*fun main(){
     var message: String? = "Hello World"
     print(message?.length) //Will print 11
     message = null //Assign null to the variable
     print(message?.length) //Will print null
+}*/
+
+// Using Smart Casting
+fun consume(a: Any) {
+     if (a is String) {
+        println(a.length) // the type of a is String
+         }
+     if (a is Int) {
+        println(a * 10) // the type of a is Int
+       }
+}
+
+fun main() {
+     consume("ABC") // 3
+    consume(10) // 100
 }
