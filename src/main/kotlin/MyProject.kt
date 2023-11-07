@@ -1133,7 +1133,7 @@ fun main() {
 }*/
 
 //Annotation classes
-@Throws(ArithmeticException::class)
+/*@Throws(ArithmeticException::class)
 fun divide(a: Int, b: Int): Int {
      return a / b
 }
@@ -1142,5 +1142,17 @@ fun divide(a: Int, b: Int): Int {
 fun findClusters(number: Int) {
      if (number < 1) throw IllegalArgumentException("The number of clusters cannot be smaller than 1, it is $number")
      // ...
-}
+}*/
+
+//Using Special Annotation
+/*annotation class MyAnnotation(val someDescription: String)
+
+@MyAnnotation("Class annotation")
+class A(
+     @MyAnnotation("Constructor property annotation")
+val a: Int
+) {
+     @MyAnnotation("Method annotation")
+     fun b() {}
+}*/
 
