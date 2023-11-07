@@ -1282,7 +1282,7 @@ fun main() {
 }*/
 
 //To check if a list is empty, you can compare its size to 0, or you can use the isEmpty method.
-fun main() {
+/*fun main() {
     val list = listOf("A", "B", "C")
     println(list.size == 0) // False
     println(list.isEmpty()) // False
@@ -1290,4 +1290,12 @@ fun main() {
     val empty: Set<Int> = setOf()
     println(empty.size == 0) // True
     println(empty.isEmpty()) // True
+}*/
+
+//Getting the positions of elements in a list using "[]"
+fun main() {
+    val list = listOf("A", "B", "C")
+    println(list[0]) // A
+    println(list[1]) // B
+    println(list[2]) // C
 }
