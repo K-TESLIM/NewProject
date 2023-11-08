@@ -1427,7 +1427,7 @@ fun main() {
 }*/
 
 //Data type of maps using Map<key Type, value type>
-fun main() {
+/*fun main() {
     val capitals: Map<String, String> =
         mapOf("USA" to "Washington", "Poland" to "Warsaw", "Ukraine" to "Kyiv")
 
@@ -1436,6 +1436,15 @@ fun main() {
     val alphabet: Map<Char, Int> = mapOf('A' to 1, 'B' to 2, 'C' to 3)
 
     println(alphabet) // {A=1, B=2, C=3}
+}*/
+
+//Finding a value of a key in Maps
+fun main() {
+    val alphabet: Map<Char, Int> = mapOf('A' to 1, 'B' to 2, 'C' to 3)
+    val number: Int? = alphabet['A']
+    println(number) // 1
+    println(alphabet['B']) // 2
+    println(alphabet['&']) // null
 }
 
 
