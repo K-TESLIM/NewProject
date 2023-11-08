@@ -1310,10 +1310,19 @@ fun main() {
 }*/
 
 //Iterate over list
-fun main() {
+/*fun main() {
     val letters = listOf("A", "B", "C")
      for (letter in letters) {
          print(letter)
          }
+}*/
+
+//Using mutable lists: List is a type representing read-only lists so to make it mutable, use mutableListOf, and the type is MutableList.
+fun main() {
+    val list = mutableListOf("A", "B")
+    list.add("C")
+    println(list) // [A, B, C]
+    list.remove("B")
+    println(list) // [A, C]
 }
 
