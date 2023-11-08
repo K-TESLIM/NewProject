@@ -1439,12 +1439,24 @@ fun main() {
 }*/
 
 //Finding a value of a key in Maps
-fun main() {
+/*fun main() {
     val alphabet: Map<Char, Int> = mapOf('A' to 1, 'B' to 2, 'C' to 3)
     val number: Int? = alphabet['A']
     println(number) // 1
     println(alphabet['B']) // 2
     println(alphabet['&']) // null
+}*/
+
+//Adding elements to a map
+fun main() {
+    val map1 = mapOf('A' to "Alex", 'B' to "Bob")
+    val map2 = map1 + ('C' to "Celina")
+    println(map1) // {A=Alex, B=Bob}
+    println(map2) // {A=Alex, B=Bob, C=Celina}
+    val map3 = mapOf('D' to "Daniel", 'E' to "Ellen")
+    val map4 = map2 + map3
+    println(map3) // {D=Daniel, E=Ellen}
+    println(map4) // {A=Alex, B=Bob, C=Celina, D=Daniel, E=Ellen}
 }
 
 
