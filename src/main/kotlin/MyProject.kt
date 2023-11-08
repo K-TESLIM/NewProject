@@ -1373,11 +1373,21 @@ fun main() {
 }*/
 
 //Two elements are duplicated if they are equal, so if == between them returns true. Since regular classes are considered unique, they are never considered to be duplicates.
-class User(val name: String)
+/*class User(val name: String)
 
 fun main() {
     val set = setOf(User("A"), User("A"))
     println(set + User("A")) // [User@XXX, User@YYY, User@ZZZ]
+}*/
+
+//However, data classes are equal when their all-constructor properties have the same values.
+data class User(val name: String)
+
+fun main() {
+    val set = setOf(User("A"), User("A"))
+    println(set + User("A")) // [User(name=A)]
 }
+
+
 
 
