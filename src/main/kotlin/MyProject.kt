@@ -1293,9 +1293,27 @@ fun main() {
 }*/
 
 //Getting the positions of elements in a list using "[]"
-fun main() {
+/*fun main() {
     val list = listOf("A", "B", "C")
     println(list[0]) // A
     println(list[1]) // B
     println(list[2]) // C
+}*/
+
+//Checking if a list contains a particular element
+/*fun main() {
+    val list = listOf("A", "B", "C")
+    println(list.contains("A")) // true
+    println(list.contains("Z")) // false
+    println("A" in list) // true
+    println("Z" in list) // false
+}*/
+
+//Iterate over list
+fun main() {
+    val letters = listOf("A", "B", "C")
+     for (letter in letters) {
+         print(letter)
+         }
 }
+
