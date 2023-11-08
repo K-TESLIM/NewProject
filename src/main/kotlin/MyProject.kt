@@ -1460,10 +1460,16 @@ fun main() {
 }*/
 
 //Checking if a map contains a Key
-fun main() {
+/*fun main() {
     val map = mapOf('A' to "Alex", 'B' to "Bob")
     println('A' in map) // true
     println('Z' in map) // false
+}*/
+
+//Checking how many associations(number of elements) you have in a map
+fun main() {
+    val map = mapOf('A' to "Alex", 'B' to "Bob")
+    println(map.size) // 2
 }
 
 
