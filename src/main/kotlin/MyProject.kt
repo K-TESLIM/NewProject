@@ -1356,9 +1356,20 @@ fun main() {
 }*/
 
 //Getting the number of elements in a set
-fun main() {
+/*fun main() {
     val set = setOf('A', 'B', 'C')
     println(set.size) // 3
+}*/
+
+//o check if a set is empty, you can compare its size to 0, or you can use the isEmpty method.
+fun main() {
+    val set = setOf('A', 'B', 'C')
+    println(set.size == 0) // false
+    println(set.isEmpty()) // false
+
+    val empty: Set<Int> = setOf()
+    println(empty.size == 0) // true
+    println(empty.isEmpty()) // true
 }
 
 
