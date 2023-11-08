@@ -1334,8 +1334,17 @@ fun main() {
 }*/
 
 //Creating a set
-fun main() {
+/*fun main() {
     val set = setOf('A', 'B', 'C')
     println(set) // [A, B, C]
+}*/
+
+// Setting Set Data Type
+fun main() {
+    val set: Set<Char> = setOf('A', 'B', 'C')
+    println(set) // [A, B, C]
+    val ints: Set<Long> = setOf(1L, 2L, 3L)
+    println(ints) // [1, 2, 3]
 }
+
 
