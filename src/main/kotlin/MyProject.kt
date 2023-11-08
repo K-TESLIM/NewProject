@@ -1407,12 +1407,23 @@ fun main() {
 //Set is a type representing read-only sets.
 // If you want to create a mutable set, use mutableSetOf, and the result type is MutableSet.
 //With mutable sets, you can use methods like add or remove to add or remove a certain element.
-fun main() {
+/*fun main() {
     val set = mutableSetOf('A', 'B', 'Z')
     set.add('C')
     println(set) // [A, B, C]
     set.remove('B')
     println(set) // [A, C]
+}*/
+
+//Creating Maps
+fun main() {
+    val capitals = mapOf("USA" to "Washington", "Poland" to "Warsaw", "Ukraine" to "Kyiv")
+    //    val capitals = mapOf(
+    //        Pair("USA", "Washington"),
+    //        Pair("Poland", "Warsaw"),
+    //        Pair("Ukraine", "Kyiv")
+    //    )
+    println(capitals) // {USA=Washington, Poland=Warsaw, Ukraine=Kyiv}
 }
 
 
