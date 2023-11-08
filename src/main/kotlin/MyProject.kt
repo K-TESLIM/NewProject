@@ -1389,12 +1389,19 @@ fun main() {
 }*/
 
 //Checking if a set has an element
-fun main() {
+/*fun main() {
     val set = setOf('A', 'B', 'C')
     println(set.contains('A')) // true
     println(set.contains('Z')) // false
     println('A' in set) // true
     println('Z' in set) // false
+}*/
+
+//To check if a set does not contain an element
+fun main() {
+    val set = setOf("A", "B", "C")
+    println("A" !in set) // false
+    println("Z" !in set) // true
 }
 
 
