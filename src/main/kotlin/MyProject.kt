@@ -1408,7 +1408,7 @@ fun main() {
 // If you want to create a mutable set, use mutableSetOf, and the result type is MutableSet.
 //With mutable sets, you can use methods like add or remove to add or remove a certain element.
 fun main() {
-    val set = mutableSetOf('A', 'B')
+    val set = mutableSetOf('A', 'B', 'Z')
     set.add('C')
     println(set) // [A, B, C]
     set.remove('B')
