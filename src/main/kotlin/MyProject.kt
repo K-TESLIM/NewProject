@@ -1318,11 +1318,18 @@ fun main() {
 }*/
 
 //Using mutable lists: List is a type representing read-only lists so to make it mutable, use mutableListOf, and the type is MutableList.
-fun main() {
+/*fun main() {
     val list = mutableListOf("A", "B")
     list.add("C")
     println(list) // [A, B, C]
     list.remove("B")
     println(list) // [A, C]
+}*/
+
+//Changing elements in a list
+fun main() {
+    val list = mutableListOf("A", "B", "C")
+    list[1] = "Z"
+    println(list) // [A, Z, C]
 }
 
