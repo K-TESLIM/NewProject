@@ -1473,14 +1473,32 @@ fun main() {
 }*/
 
 //Iterating over maps
-fun main() {
+/*fun main() {
     val map = mapOf('A' to "Alex", 'B' to "Bob")
     for (entry in map) {
         println("${entry.key} is for ${entry.value}")
     }
+}*/
+
+//restructuring an entry into two variables
+/*fun main() {
+    val map = mapOf('A' to "Alex", 'B' to "Bob")
+    for ((letter, name) in map) {
+        println("$letter is for $name")
+    }
 }
+// A is for Alex
+// B is for Bob*/
 
-
+//Mutable maps
+fun main() {
+    val map: MutableMap<Char, String> = mutableMapOf('A' to "Alex", 'B' to "Bob")
+    map.put('C', "Celina")
+    map['D'] = "Daria"
+    println(map) // {A=Alex, B=Bob, D=Daria, C=Celina}
+    map.remove('B')
+    println(map) // {A=Alex, D=Daria, C=Celina}
+}
 
 
 
