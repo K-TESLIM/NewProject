@@ -1327,9 +1327,15 @@ fun main() {
 }*/
 
 //Changing elements in a list
-fun main() {
+/*fun main() {
     val list = mutableListOf("A", "B", "C", "D")
     list[1] = "Z"
     println(list) // [A, Z, C]
+}*/
+
+//Creating a set
+fun main() {
+    val set = setOf('A', 'B', 'C')
+    println(set) // [A, B, C]
 }
 
