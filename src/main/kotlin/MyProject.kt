@@ -1398,11 +1398,23 @@ fun main() {
 }*/
 
 //To check if a set does not contain an element
-fun main() {
+/*fun main() {
     val set = setOf("A", "B", "C")
     println("A" !in set) // false
     println("Z" !in set) // true
+}*/
+
+//Set is a type representing read-only sets.
+// If you want to create a mutable set, use mutableSetOf, and the result type is MutableSet.
+//With mutable sets, you can use methods like add or remove to add or remove a certain element.
+fun main() {
+    val set = mutableSetOf('A', 'B')
+    set.add('C')
+    println(set) // [A, B, C]
+    set.remove('B')
+    println(set) // [A, C]
 }
+
 
 
 
