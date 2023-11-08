@@ -1348,11 +1348,17 @@ fun main() {
 }*/
 
 //Adding elements to Sets
-fun main() {
+/*fun main() {
     val set = setOf('A', 'B')
     println(set + 'C') // [A, B, C]
     println(set + setOf('C', 'D')) // [A, B, C, D]
     println(setOf('Z') + set) // [Z, A, B]
+}*/
+
+//Getting the number of elements in a set
+fun main() {
+    val set = setOf('A', 'B', 'C')
+    println(set.size) // 3
 }
 
 
