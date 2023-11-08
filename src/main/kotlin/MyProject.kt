@@ -1448,7 +1448,7 @@ fun main() {
 }*/
 
 //Adding elements to a map
-fun main() {
+/*fun main() {
     val map1 = mapOf('A' to "Alex", 'B' to "Bob")
     val map2 = map1 + ('C' to "Celina")
     println(map1) // {A=Alex, B=Bob}
@@ -1457,6 +1457,13 @@ fun main() {
     val map4 = map2 + map3
     println(map3) // {D=Daniel, E=Ellen}
     println(map4) // {A=Alex, B=Bob, C=Celina, D=Daniel, E=Ellen}
+}*/
+
+//Checking if a map contains a Key
+fun main() {
+    val map = mapOf('A' to "Alex", 'B' to "Bob")
+    println('A' in map) // true
+    println('Z' in map) // false
 }
 
 
