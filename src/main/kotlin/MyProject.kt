@@ -1328,7 +1328,7 @@ fun main() {
 
 //Changing elements in a list
 fun main() {
-    val list = mutableListOf("A", "B", "C")
+    val list = mutableListOf("A", "B", "C", "D")
     list[1] = "Z"
     println(list) // [A, Z, C]
 }
