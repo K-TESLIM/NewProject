@@ -1361,8 +1361,8 @@ fun main() {
     println(set.size) // 3
 }*/
 
-//o check if a set is empty, you can compare its size to 0, or you can use the isEmpty method.
-fun main() {
+//To check if a set is empty, you can compare its size to 0, or you can use the isEmpty method.
+/*fun main() {
     val set = setOf('A', 'B', 'C')
     println(set.size == 0) // false
     println(set.isEmpty()) // false
@@ -1370,6 +1370,14 @@ fun main() {
     val empty: Set<Int> = setOf()
     println(empty.size == 0) // true
     println(empty.isEmpty()) // true
+}*/
+
+//Two elements are duplicated if they are equal, so if == between them returns true. Since regular classes are considered unique, they are never considered to be duplicates.
+class User(val name: String)
+
+fun main() {
+    val set = setOf(User("A"), User("A"))
+    println(set + User("A")) // [User@XXX, User@YYY, User@ZZZ]
 }
 
 
