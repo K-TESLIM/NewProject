@@ -1381,11 +1381,20 @@ fun main() {
 }*/
 
 //However, data classes are equal when their all-constructor properties have the same values.
-data class User(val name: String)
+/*data class User(val name: String)
 
 fun main() {
     val set = setOf(User("A"), User("A"))
     println(set + User("A")) // [User(name=A)]
+}*/
+
+//Checking if a set has an element
+fun main() {
+    val set = setOf('A', 'B', 'C')
+    println(set.contains('A')) // true
+    println(set.contains('Z')) // false
+    println('A' in set) // true
+    println('Z' in set) // false
 }
 
 
