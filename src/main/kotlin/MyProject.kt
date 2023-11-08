@@ -1416,7 +1416,7 @@ fun main() {
 }*/
 
 //Creating Maps
-fun main() {
+/*fun main() {
     val capitals = mapOf("USA" to "Washington", "Poland" to "Warsaw", "Ukraine" to "Kyiv")
     //    val capitals = mapOf(
     //        Pair("USA", "Washington"),
@@ -1424,7 +1424,21 @@ fun main() {
     //        Pair("Ukraine", "Kyiv")
     //    )
     println(capitals) // {USA=Washington, Poland=Warsaw, Ukraine=Kyiv}
+}*/
+
+//Data type of maps using Map<key Type, value type>
+fun main() {
+    val capitals: Map<String, String> =
+        mapOf("USA" to "Washington", "Poland" to "Warsaw", "Ukraine" to "Kyiv")
+
+    println(capitals) // {USA=Washington, Poland=Warsaw, Ukraine=Kyiv}
+
+    val alphabet: Map<Char, Int> = mapOf('A' to 1, 'B' to 2, 'C' to 3)
+
+    println(alphabet) // {A=1, B=2, C=3}
 }
+
+
 
 
 
