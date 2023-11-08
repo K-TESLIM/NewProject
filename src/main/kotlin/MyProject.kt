@@ -1467,9 +1467,17 @@ fun main() {
 }*/
 
 //Checking how many associations(number of elements) you have in a map
-fun main() {
+/*fun main() {
     val map = mapOf('A' to "Alex", 'B' to "Bob")
     println(map.size) // 2
+}*/
+
+//Iterating over maps
+fun main() {
+    val map = mapOf('A' to "Alex", 'B' to "Bob")
+    for (entry in map) {
+        println("${entry.key} is for ${entry.value}")
+    }
 }
 
 
